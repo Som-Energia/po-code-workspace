@@ -17,6 +17,28 @@ Workspace per Product Owners de Som Energia per explorar i analitzar funcionalit
 - `gh` (GitHub CLI)
 - `GITHUB_TOKEN` amb permisos de lectura als repos de `Som-Energia`
 - `jq`
+- `opencode` (CLI)
+
+## Instal·lació de requisits (Ubuntu)
+
+```bash
+sudo apt update
+sudo apt install -y git jq curl
+
+# Instal·lar GitHub CLI (gh)
+(type -p wget >/dev/null || sudo apt install -y wget) \
+  && sudo mkdir -p -m 755 /etc/apt/keyrings \
+  && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg \
+    | sudo tee /etc/apt/keyrings/githubcli-archive-keyring.gpg >/dev/null \
+  && sudo chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+  && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" \
+    | sudo tee /etc/apt/sources.list.d/github-cli.list >/dev/null \
+  && sudo apt update \
+  && sudo apt install -y gh
+
+# Instal·lar OpenCode CLI (si encara no el tens)
+curl -fsSL https://opencode.ai/install | bash
+```
 
 ## Ús ràpid
 
@@ -36,6 +58,23 @@ export GITHUB_TOKEN=ghp_xxx
 # 4) Validar salut del workspace
 ./scripts/check-health.sh
 ```
+
+## Agent d'OpenCode: PO-Griller
+
+S'ha definit l'agent a:
+
+- `opencode/agents/po-griller.md`
+
+Ús orientatiu:
+
+1. Obre OpenCode dins aquest workspace.
+2. Selecciona l'agent **PO-Griller**.
+3. Fes-li una demanda funcional (ex: "volem afegir X al procés Y").
+4. L'agent farà preguntes de "grilling" i acabarà amb un veredicte:
+   - `[JA ESTÀ FET]`
+   - `[FÀCIL]`
+   - `[COMPLICAT]`
+   - `[IMPOSSIBLE / NO RECOMANAT]`
 
 ## Flux recomanat per PO
 
