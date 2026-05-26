@@ -8,6 +8,7 @@
 ## Runbook
 
 ```bash
+export GITHUB_TOKEN=ghp_xxx
 ./scripts/check-health.sh
 ./scripts/discover-repos.sh
 ./scripts/sync-repos.sh
@@ -16,8 +17,8 @@
 
 ## Troubleshooting
 
-- `gh` no autenticat:
-  - Executa `gh auth login`
+- `GITHUB_TOKEN` no definit:
+  - Executa `export GITHUB_TOKEN=ghp_xxx`
 - Error de clonat/pull:
   - Revisa permisos sobre el repo origen
   - Reintenta `./scripts/sync-repos.sh`

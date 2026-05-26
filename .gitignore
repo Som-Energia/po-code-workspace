@@ -1,3 +1,6 @@
+# repos
+repos/
+
 # Local Pi runtime state
 .atl/
 .pi/

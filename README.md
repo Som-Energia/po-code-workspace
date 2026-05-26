@@ -4,7 +4,7 @@ Workspace per Product Owners de Som Energia per explorar i analitzar funcionalit
 
 ## Què fa
 
-- Descobreix repositoris actius de `Som-Energia` (exclou `archived=true`).
+- Descobreix repositoris actius de `Som-Energia` (exclou `archived=true`) i genera `repos.json`.
 - Clona o actualitza repos locals a `repos/`.
 - Genera resums en Markdown per repo a `summaries/repos/`.
 - Genera índexs útils per domini, llenguatge i producte.
@@ -14,17 +14,21 @@ Workspace per Product Owners de Som Energia per explorar i analitzar funcionalit
 
 - `bash`
 - `git`
-- `gh` (GitHub CLI) autenticat (`gh auth login`)
-- `yq` (opcional però recomanat)
+- `gh` (GitHub CLI)
+- `GITHUB_TOKEN` amb permisos de lectura als repos de `Som-Energia`
+- `jq`
 
 ## Ús ràpid
 
 ```bash
+# 0) Definir token de GitHub
+export GITHUB_TOKEN=ghp_xxx
+
 # 1) Descobrir repos actius
-a./scripts/discover-repos.sh
+./scripts/discover-repos.sh
 
 # 2) Clonar o fer pull dels repos
-a./scripts/sync-repos.sh
+./scripts/sync-repos.sh
 
 # 3) Generar resums
 ./scripts/summarize-repos.sh
@@ -44,4 +48,6 @@ a./scripts/sync-repos.sh
 
 - Aquest repo no elimina cap carpeta local automàticament.
 - Si un repo passa a archived, deixarà d’entrar a la llista activa a la següent descoberta.
+- Els scripts fan servir `GITHUB_TOKEN` per consultar GitHub i per clone/pull.
+- Flux 100% bash + `jq` (sense dependència de Python).
 - `opencode/commands/grill-me.md` inclou prompt base per estimar impacte/cost de features.

@@ -10,6 +10,7 @@ Respondre preguntes com:
 
 ## Pas a pas
 
+0. `export GITHUB_TOKEN=ghp_xxx`
 1. `./scripts/discover-repos.sh`
 2. `./scripts/sync-repos.sh`
 3. `./scripts/summarize-repos.sh`
