@@ -1,5 +1,6 @@
 # repos
 repos/
+summaries/
 
 # Local Pi runtime state
 .atl/
