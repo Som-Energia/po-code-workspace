@@ -1,0 +1,663 @@
+organization: Som-Energia
+generated_at: '2026-05-26T11:34:57.862940Z'
+repos:
+  - name: .github
+    url: https://github.com/Som-Energia/.github
+    language: null
+    pushed_at: '2024-06-14T07:04:12Z'
+    description: "Som Energia - renewable energy cooperative"
+  - name: airbytetransformations
+    url: https://github.com/Som-Energia/airbytetransformations
+    language: null
+    pushed_at: '2023-02-21T15:57:41Z'
+    description: "dbt transformations for airbyte"
+  - name: async_reports
+    url: https://github.com/Som-Energia/async_reports
+    language: Python
+    pushed_at: '2013-09-07T11:56:56Z'
+    description: "Async Reports for OpenERP"
+  - name: autoworker
+    url: https://github.com/Som-Energia/autoworker
+    language: Python
+    pushed_at: '2023-08-10T07:57:27Z'
+    description: "Spawn RQ Workers automatically"
+  - name: back2back
+    url: https://github.com/Som-Energia/back2back
+    language: Python
+    pushed_at: '2024-12-04T17:14:25Z'
+    description: "Light framework to setup Back 2 Back test scripts"
+  - name: black-light-distributor
+    url: https://github.com/Som-Energia/black-light-distributor
+    language: Python
+    pushed_at: '2022-11-18T18:04:58Z'
+    description: "Technical test for Som Energia IT interviews"
+  - name: cchloader
+    url: https://github.com/Som-Energia/cchloader
+    language: Python
+    pushed_at: '2025-11-06T07:05:43Z'
+    description: "CNMC CCH loader"
+  - name: codit-devise-cas-authenticable
+    url: https://github.com/Som-Energia/codit-devise-cas-authenticable
+    language: Ruby
+    pushed_at: '2020-06-05T12:25:24Z'
+    description: "Adaptation of `devise-cas-authenticable`"
+  - name: cookiecutter-somenergia-dades
+    url: https://github.com/Som-Energia/cookiecutter-somenergia-dades
+    language: Python
+    pushed_at: '2022-12-02T17:27:08Z'
+    description: "Cookiecutter of a package with airflow dag, a main script and a package for your code, with documentation"
+  - name: cups2email
+    url: https://github.com/Som-Energia/cups2email
+    language: Python
+    pushed_at: '2018-11-12T17:00:24Z'
+    description: "Send email getting addresses from cups from excel"
+  - name: dades-dag-sandbox
+    url: https://github.com/Som-Energia/dades-dag-sandbox
+    language: Python
+    pushed_at: '2022-12-29T09:56:37Z'
+    description: "an empty dag as an example and sandbox"
+  - name: decidim-cas-client
+    url: https://github.com/Som-Energia/decidim-cas-client
+    language: Ruby
+    pushed_at: '2025-02-06T15:29:26Z'
+    description: "  Integration of CAS login and verification"
+  - name: decidim-deploy
+    url: https://github.com/Som-Energia/decidim-deploy
+    language: HTML
+    pushed_at: '2021-07-22T10:24:01Z'
+    description: "Documentation and deployment files for staging and production participa environments"
+  - name: decidim-som-energia-app
+    url: https://github.com/Som-Energia/decidim-som-energia-app
+    language: Ruby
+    pushed_at: '2026-05-21T13:12:36Z'
+    description: "Decidim APP for Participa SomEnergia"
+  - name: decidim-som-energia-centre-ajuda
+    url: https://github.com/Som-Energia/decidim-som-energia-centre-ajuda
+    language: Ruby
+    pushed_at: '2022-10-06T02:59:49Z'
+    description: "Aplicació Decidim per a Som Energia i el seu centre d'ajuda."
+  - name: destral
+    url: https://github.com/Som-Energia/destral
+    language: Python
+    pushed_at: '2025-11-13T12:18:13Z'
+    description: "OpenERP 5 testing framework"
+  - name: devenv
+    url: https://github.com/Som-Energia/devenv
+    language: Shell
+    pushed_at: '2022-10-04T18:02:49Z'
+    description: "Simple script to create LXC development environments"
+  - name: distri-remesa-parser
+    url: https://github.com/Som-Energia/distri-remesa-parser
+    language: Python
+    pushed_at: '2025-07-28T08:32:14Z'
+    description: "Python module to parser payment order files with related invoices sended by the spanish 'Distribuidoras' to the 'Comercializadoras'"
+  - name: docker-build-push
+    url: https://github.com/Som-Energia/docker-build-push
+    language: Python
+    pushed_at: '2022-11-03T16:13:42Z'
+    description: ""
+  - name: edi
+    url: https://github.com/Som-Energia/edi
+    language: Python
+    pushed_at: '2022-04-04T16:01:42Z'
+    description: ""
+  - name: emili
+    url: https://github.com/Som-Energia/emili
+    language: Python
+    pushed_at: '2022-06-21T15:59:22Z'
+    description: "Simple Python/CLI interface for sending emails. Handles markdown, ansi colors, attachments...."
+  - name: empowering
+    url: https://github.com/Som-Energia/empowering
+    language: Python
+    pushed_at: '2019-06-27T15:33:34Z'
+    description: "Empowering Insigth Engine REST API"
+  - name: erp
+    url: https://github.com/Som-Energia/erp
+    language: Python
+    pushed_at: '2026-05-26T04:00:11Z'
+    description: "GISCE ERP"
+  - name: erp_docs
+    url: https://github.com/Som-Energia/erp_docs
+    language: Python
+    pushed_at: '2024-05-14T13:12:45Z'
+    description: "Repository to learn how modules works in OpenERP / Odoo"
+  - name: erpclient
+    url: https://github.com/Som-Energia/erpclient
+    language: Python
+    pushed_at: '2023-03-09T10:04:45Z'
+    description: "GISCE-ERP Client"
+  - name: erppeek_wst
+    url: https://github.com/Som-Energia/erppeek_wst
+    language: Python
+    pushed_at: '2021-03-22T12:29:46Z'
+    description: ""
+  - name: fortinet-gh-experiment
+    url: https://github.com/Som-Energia/fortinet-gh-experiment
+    language: null
+    pushed_at: '2022-09-03T23:28:17Z'
+    description: ""
+  - name: freescout
+    url: https://github.com/Som-Energia/freescout
+    language: PHP
+    pushed_at: '2025-02-26T11:57:29Z'
+    description: "FreeScout — Free self-hosted help desk & shared mailbox (Zendesk / Help Scout alternative)"
+  - name: frontend-config
+    url: https://github.com/Som-Energia/frontend-config
+    language: JavaScript
+    pushed_at: '2026-05-22T11:48:09Z'
+    description: "Unified configurations for frontend projects"
+  - name: gestionatr
+    url: https://github.com/Som-Energia/gestionatr
+    language: Python
+    pushed_at: '2026-05-23T04:00:09Z'
+    description: ""
+  - name: gestor-absencies-ui
+    url: https://github.com/Som-Energia/gestor-absencies-ui
+    language: JavaScript
+    pushed_at: '2021-02-15T14:53:29Z'
+    description: "Gestor Absències UI (React)"
+  - name: gestor_absencies
+    url: https://github.com/Som-Energia/gestor_absencies
+    language: Python
+    pushed_at: '2021-03-19T22:17:54Z'
+    description: ""
+  - name: ghactions-notify
+    url: https://github.com/Som-Energia/ghactions-notify
+    language: null
+    pushed_at: '2024-07-23T08:26:44Z'
+    description: "Github action to notify SomEnergia team the failing ci"
+  - name: giscedata_facturacio_indexada_som
+    url: https://github.com/Som-Energia/giscedata_facturacio_indexada_som
+    language: Python
+    pushed_at: '2026-05-26T07:35:11Z'
+    description: "Module PowerERP (OpenERP) to manage indexed powering invoices"
+  - name: gitlab-runner-template
+    url: https://github.com/Som-Energia/gitlab-runner-template
+    language: null
+    pushed_at: '2023-07-19T13:29:40Z'
+    description: "(Mirrored repository) Docker stack template for creating gitlab runners. "
+  - name: hackasom
+    url: https://github.com/Som-Energia/hackasom
+    language: JavaScript
+    pushed_at: '2025-11-04T15:46:26Z'
+    description: "Hackasom Site"
+  - name: helpscout_webhooks
+    url: https://github.com/Som-Energia/helpscout_webhooks
+    language: Python
+    pushed_at: '2024-11-21T14:53:15Z'
+    description: "Webhooks for Helpscout"
+  - name: heman
+    url: https://github.com/Som-Energia/heman
+    language: Python
+    pushed_at: '2025-11-04T12:03:51Z'
+    description: "⚔ He-Man and the Empowering sword"
+  - name: hr
+    url: https://github.com/Som-Energia/hr
+    language: HTML
+    pushed_at: '2022-12-02T11:45:42Z'
+    description: "Odoo Human Resources Addons"
+  - name: ine_tugesto
+    url: https://github.com/Som-Energia/ine_tugesto
+    language: Python
+    pushed_at: '2022-05-16T11:18:08Z'
+    description: "Tugesto ine to ids translations "
+  - name: infoenergia-api
+    url: https://github.com/Som-Energia/infoenergia-api
+    language: Python
+    pushed_at: '2026-03-26T09:41:08Z'
+    description: "🪃 Api to exchange measurements and curves information"
+  - name: infoenergia-dashboard
+    url: https://github.com/Som-Energia/infoenergia-dashboard
+    language: JavaScript
+    pushed_at: '2026-05-22T11:54:05Z'
+    description: "InfoEnergia React Dashboard"
+  - name: instance-manager
+    url: https://github.com/Som-Energia/instance-manager
+    language: Python
+    pushed_at: '2023-06-22T19:45:52Z'
+    description: "OpenERP server instance manager"
+  - name: instance-manager-ui
+    url: https://github.com/Som-Energia/instance-manager-ui
+    language: TypeScript
+    pushed_at: '2023-06-22T19:46:42Z'
+    description: ""
+  - name: intranet-ui
+    url: https://github.com/Som-Energia/intranet-ui
+    language: JavaScript
+    pushed_at: '2022-03-31T15:18:03Z'
+    description: "Som Intranet UI"
+  - name: invisible-friend
+    url: https://github.com/Som-Energia/invisible-friend
+    language: Python
+    pushed_at: '2021-12-17T15:09:22Z'
+    description: "Tool to randomly assign 'invisible friends' (Secret Santa)"
+  - name: keepupd
+    url: https://github.com/Som-Energia/keepupd
+    language: Python
+    pushed_at: '2025-06-27T08:56:26Z'
+    description: "Keep GISCE ERP Up to Date"
+  - name: l10n-spain
+    url: https://github.com/Som-Energia/l10n-spain
+    language: Python
+    pushed_at: '2025-02-19T08:31:46Z'
+    description: "Odoo Spain Localization"
+  - name: legal-texts
+    url: https://github.com/Som-Energia/legal-texts
+    language: Python
+    pushed_at: '2025-02-15T16:15:28Z'
+    description: "Central repository of Som Energia legal texts to be shown in several applications"
+  - name: libComXML
+    url: https://github.com/Som-Energia/libComXML
+    language: Python
+    pushed_at: '2016-10-06T07:32:39Z'
+    description: "Python object XML serialization"
+  - name: libFacturacioATR
+    url: https://github.com/Som-Energia/libFacturacioATR
+    language: Python
+    pushed_at: '2026-05-19T04:00:08Z'
+    description: "Llibreria amb les funcions de facturació ATR"
+  - name: lleida_net_api
+    url: https://github.com/Som-Energia/lleida_net_api
+    language: Python
+    pushed_at: '2023-11-13T07:34:46Z'
+    description: "Lleida.net API python library"
+  - name: mamba
+    url: https://github.com/Som-Energia/mamba
+    language: Python
+    pushed_at: '2023-11-09T15:31:43Z'
+    description: "The definitive testing tool for Python. Born under the banner of Behavior Driven Development (BDD)."
+  - name: mongodb_backend
+    url: https://github.com/Som-Energia/mongodb_backend
+    language: Python
+    pushed_at: '2024-11-09T05:00:07Z'
+    description: "MongoDB backend for OpenERP"
+  - name: nombres-a-lletres
+    url: https://github.com/Som-Energia/nombres-a-lletres
+    language: Python
+    pushed_at: '2018-10-20T14:27:35Z'
+    description: "A python library to convert a number to letters in catalan. Based on numbertoletters package that convert in spanish."
+  - name: odoo-role
+    url: https://github.com/Som-Energia/odoo-role
+    language: Jinja
+    pushed_at: '2021-07-16T12:30:54Z'
+    description: "Ansible role provisioning Odoo."
+  - name: odoo_api_doc
+    url: https://github.com/Som-Energia/odoo_api_doc
+    language: HTML
+    pushed_at: '2026-05-14T14:58:23Z'
+    description: "odoo_api_doc"
+  - name: oficinavirtual
+    url: https://github.com/Som-Energia/oficinavirtual
+    language: Python
+    pushed_at: '2026-05-19T08:05:07Z'
+    description: "Commercialization Virtual Office"
+  - name: oi_hr_holidays_attachment
+    url: https://github.com/Som-Energia/oi_hr_holidays_attachment
+    language: Python
+    pushed_at: '2021-06-04T11:18:40Z'
+    description: "Odoo module Attachment Required Leave Settings"
+  - name: OMIE
+    url: https://github.com/Som-Energia/OMIE
+    language: Python
+    pushed_at: '2025-08-22T10:04:32Z'
+    description: ""
+  - name: omie-modules
+    url: https://github.com/Som-Energia/omie-modules
+    language: Python
+    pushed_at: '2025-02-19T14:01:23Z'
+    description: "Omie modules"
+  - name: ooop
+    url: https://github.com/Som-Energia/ooop
+    language: Python
+    pushed_at: '2023-07-21T15:04:21Z'
+    description: "OpenObject On Python"
+  - name: oorq
+    url: https://github.com/Som-Energia/oorq
+    language: Python
+    pushed_at: '2025-09-10T04:00:05Z'
+    description: "OpenObject Redis Queue"
+  - name: opencode-skills
+    url: https://github.com/Som-Energia/opencode-skills
+    language: null
+    pushed_at: '2026-04-23T11:52:22Z'
+    description: "Skills personalizadas para OpenCode - Som Energia"
+  - name: opendata-gapminder
+    url: https://github.com/Som-Energia/opendata-gapminder
+    language: JavaScript
+    pushed_at: '2024-07-29T21:34:41Z'
+    description: "Dynamic visualization of temporal and spacial data from Som Energia's OpenData"
+  - name: opendata-ui
+    url: https://github.com/Som-Energia/opendata-ui
+    language: JavaScript
+    pushed_at: '2026-01-20T12:04:50Z'
+    description: ""
+  - name: openerp-saas
+    url: https://github.com/Som-Energia/openerp-saas
+    language: Python
+    pushed_at: '2020-11-05T07:22:11Z'
+    description: "An example to useOpenERP instance as a service, for CI integration"
+  - name: openerp_som_addons
+    url: https://github.com/Som-Energia/openerp_som_addons
+    language: Python
+    pushed_at: '2026-05-26T10:11:01Z'
+    description: "OpenERP addons of Som Energia"
+  - name: orakWlum
+    url: https://github.com/Som-Energia/orakWlum
+    language: Python
+    pushed_at: '2018-11-30T12:20:56Z'
+    description: ""
+  - name: orakWlum-api
+    url: https://github.com/Som-Energia/orakWlum-api
+    language: Jupyter Notebook
+    pushed_at: '2018-11-23T08:22:15Z'
+    description: "oraKWlum API"
+  - name: pg_tools
+    url: https://github.com/Som-Energia/pg_tools
+    language: Python
+    pushed_at: '2021-10-14T16:20:57Z'
+    description: "PostgreSQL tools"
+  - name: plantmeter
+    url: https://github.com/Som-Energia/plantmeter
+    language: Python
+    pushed_at: '2026-04-29T12:39:48Z'
+    description: "OpenERP module and library to manage multisite energy generation"
+  - name: plantmonitor
+    url: https://github.com/Som-Energia/plantmonitor
+    language: Python
+    pushed_at: '2026-03-11T15:34:29Z'
+    description: ""
+  - name: pool_transport
+    url: https://github.com/Som-Energia/pool_transport
+    language: Python
+    pushed_at: '2021-09-01T11:14:40Z'
+    description: "Concurrent xmlrpc requests"
+  - name: powered-by-somenergia
+    url: https://github.com/Som-Energia/powered-by-somenergia
+    language: JavaScript
+    pushed_at: '2020-06-25T08:38:19Z'
+    description: " Llista de clients que funcionen amb Som Energia "
+  - name: poweremail
+    url: https://github.com/Som-Energia/poweremail
+    language: Python
+    pushed_at: '2026-04-29T04:00:03Z'
+    description: "Email module for PowERP"
+  - name: poweremail-modules
+    url: https://github.com/Som-Energia/poweremail-modules
+    language: Python
+    pushed_at: '2026-04-23T12:18:08Z'
+    description: "Email related modules 💌"
+  - name: powerprofile
+    url: https://github.com/Som-Energia/powerprofile
+    language: Python
+    pushed_at: '2023-11-28T05:00:06Z'
+    description: "Electric Power Curve and Profiles library"
+  - name: pydata-bcn-dbt-fal
+    url: https://github.com/Som-Energia/pydata-bcn-dbt-fal
+    language: Jupyter Notebook
+    pushed_at: '2023-06-15T10:02:33Z'
+    description: "pydata-bcn-dbt-fal"
+  - name: python-stdnum
+    url: https://github.com/Som-Energia/python-stdnum
+    language: Python
+    pushed_at: '2016-08-31T20:09:13Z'
+    description: "A Python library to provide functions to handle, parse and validate standard numbers."
+  - name: python-yamlns
+    url: https://github.com/Som-Energia/python-yamlns
+    language: Python
+    pushed_at: '2025-01-04T23:35:47Z'
+    description: "YAML serializable dictionary accessible by both subscript and attribute syntax, like Javascript Objects."
+  - name: qreu
+    url: https://github.com/Som-Energia/qreu
+    language: Python
+    pushed_at: '2025-08-25T11:23:03Z'
+    description: "Email Wrapper"
+  - name: react-wordpress
+    url: https://github.com/Som-Energia/react-wordpress
+    language: PHP
+    pushed_at: '2025-01-27T10:58:03Z'
+    description: ""
+  - name: redasher
+    url: https://github.com/Som-Energia/redasher
+    language: Python
+    pushed_at: '2022-12-19T07:29:45Z'
+    description: "Tool to manage workflow from redash data to files that can be managed by git"
+  - name: rescoopplus
+    url: https://github.com/Som-Energia/rescoopplus
+    language: Python
+    pushed_at: '2018-10-30T15:42:40Z'
+    description: "REScoop Plus project tools"
+  - name: scriptlauncher
+    url: https://github.com/Som-Energia/scriptlauncher
+    language: HTML
+    pushed_at: '2025-02-06T16:30:06Z'
+    description: "Flask app to launch scripts in a server"
+  - name: sermepa
+    url: https://github.com/Som-Energia/sermepa
+    language: Python
+    pushed_at: '2026-05-14T13:12:50Z'
+    description: "Sermepa client"
+  - name: server-auth
+    url: https://github.com/Som-Energia/server-auth
+    language: JavaScript
+    pushed_at: '2025-02-19T08:31:40Z'
+    description: ""
+  - name: sippers
+    url: https://github.com/Som-Energia/sippers
+    language: Python
+    pushed_at: '2025-05-07T06:17:56Z'
+    description: "Import and parse CNMC SIPS"
+  - name: som-cas
+    url: https://github.com/Som-Energia/som-cas
+    language: CSS
+    pushed_at: '2026-03-30T09:59:42Z'
+    description: "CAS authentication service"
+  - name: som_modules_fulla
+    url: https://github.com/Som-Energia/som_modules_fulla
+    language: Dockerfile
+    pushed_at: '2024-03-28T09:07:22Z'
+    description: "OpenERP module that loads all installed modules in Som Energia"
+  - name: som_sync_openerp_modules
+    url: https://github.com/Som-Energia/som_sync_openerp_modules
+    language: Python
+    pushed_at: '2026-05-26T10:58:18Z'
+    description: "Module to syncronize OpenERP -> Odoo"
+  - name: somenergia-apinergia-client
+    url: https://github.com/Som-Energia/somenergia-apinergia-client
+    language: Python
+    pushed_at: '2022-06-17T17:22:55Z'
+    description: "Package to read from infoenergia-api"
+  - name: somenergia-cchmonitor
+    url: https://github.com/Som-Energia/somenergia-cchmonitor
+    language: Python
+    pushed_at: '2022-12-02T13:04:57Z'
+    description: ""
+  - name: somenergia-courses
+    url: https://github.com/Som-Energia/somenergia-courses
+    language: HTML
+    pushed_at: '2026-05-06T19:05:02Z'
+    description: "Public training materials"
+  - name: somenergia-dades-mercat
+    url: https://github.com/Som-Energia/somenergia-dades-mercat
+    language: Python
+    pushed_at: '2021-12-09T17:22:51Z'
+    description: "L'objectiu d'aquest repo és centralitzar els scripts per insertar i transformar les dades que necessita Mercat Elèctric."
+  - name: somenergia-dades-prova-tecnica
+    url: https://github.com/Som-Energia/somenergia-dades-prova-tecnica
+    language: Python
+    pushed_at: '2023-01-31T11:02:51Z'
+    description: "Repositori per allotjar les proves tècniques dels processos de selecció de l'equip de dades de Som Energia"
+  - name: somenergia-dataexports
+    url: https://github.com/Som-Energia/somenergia-dataexports
+    language: Python
+    pushed_at: '2021-03-26T10:45:32Z'
+    description: "CSV files generation from OpenERP data"
+  - name: somenergia-exemple-documentacio
+    url: https://github.com/Som-Energia/somenergia-exemple-documentacio
+    language: Python
+    pushed_at: '2024-09-10T16:36:02Z'
+    description: ""
+  - name: somenergia-generationkwh
+    url: https://github.com/Som-Energia/somenergia-generationkwh
+    language: Python
+    pushed_at: '2026-05-19T06:52:59Z'
+    description: "OpenERP module to manage Som Energia's Generation kWh"
+  - name: somenergia-jardiner
+    url: https://github.com/Som-Energia/somenergia-jardiner
+    language: Python
+    pushed_at: '2025-01-13T09:52:15Z'
+    description: "Mending and ternuring of green energy plants"
+  - name: somenergia-odoo
+    url: https://github.com/Som-Energia/somenergia-odoo
+    language: Python
+    pushed_at: '2026-05-26T08:19:05Z'
+    description: ""
+  - name: somenergia-odoo-private
+    url: https://github.com/Som-Energia/somenergia-odoo-private
+    language: HTML
+    pushed_at: '2025-04-01T05:18:04Z'
+    description: "Private modules bought or owned by other providers"
+  - name: somenergia-oomakotest
+    url: https://github.com/Som-Energia/somenergia-oomakotest
+    language: Mako
+    pushed_at: '2026-05-20T06:31:26Z'
+    description: "Simulates the injection of openerp objects into mako templates"
+  - name: somenergia-opendata
+    url: https://github.com/Som-Energia/somenergia-opendata
+    language: Python
+    pushed_at: '2026-04-02T11:08:35Z'
+    description: "Public API to access open data information about the cooperative"
+  - name: somenergia-plant-reader
+    url: https://github.com/Som-Energia/somenergia-plant-reader
+    language: Python
+    pushed_at: '2024-05-27T16:37:19Z'
+    description: ""
+  - name: somenergia-planter
+    url: https://github.com/Som-Energia/somenergia-planter
+    language: null
+    pushed_at: '2022-10-20T08:21:33Z'
+    description: "Extraction and Load of remote modbus servers"
+  - name: somenergia-poetry-docker-workshop
+    url: https://github.com/Som-Energia/somenergia-poetry-docker-workshop
+    language: Dockerfile
+    pushed_at: '2023-11-06T09:58:44Z'
+    description: "A workshop for testing poetry with docker"
+  - name: somenergia-scripts
+    url: https://github.com/Som-Energia/somenergia-scripts
+    language: Python
+    pushed_at: '2026-05-26T11:29:25Z'
+    description: "Script to janitoring the invoicing proces"
+  - name: somenergia-setup-dades
+    url: https://github.com/Som-Energia/somenergia-setup-dades
+    language: null
+    pushed_at: '2022-08-22T11:02:49Z'
+    description: "Protocol d'incorporació a l'equip de dades"
+  - name: somenergia-solarprosumers
+    url: https://github.com/Som-Energia/somenergia-solarprosumers
+    language: Python
+    pushed_at: '2024-04-08T15:47:50Z'
+    description: "☀ Web application to manage collective campaigns to purchase and install solar panels at home"
+  - name: somenergia-tomatic
+    url: https://github.com/Som-Energia/somenergia-tomatic
+    language: HTML
+    pushed_at: '2026-05-26T11:01:25Z'
+    description: "Phone support team helper"
+  - name: somenergia-ui
+    url: https://github.com/Som-Energia/somenergia-ui
+    language: JavaScript
+    pushed_at: '2026-05-20T11:28:25Z'
+    description: "Common components for Som Energia UI projects"
+  - name: somenergia-utils
+    url: https://github.com/Som-Energia/somenergia-utils
+    language: Python
+    pushed_at: '2024-11-05T20:37:24Z'
+    description: "Common small tools in Som Energia projects"
+  - name: somexchanger99
+    url: https://github.com/Som-Energia/somexchanger99
+    language: Python
+    pushed_at: '2026-03-18T13:23:42Z'
+    description: ""
+  - name: somrepresenta-android
+    url: https://github.com/Som-Energia/somrepresenta-android
+    language: Kotlin
+    pushed_at: '2024-02-21T08:16:31Z'
+    description: "An experimental Android wrapper for somrepresenta-oficinavirtual"
+  - name: somrepresenta-oficinavirtual
+    url: https://github.com/Som-Energia/somrepresenta-oficinavirtual
+    language: JavaScript
+    pushed_at: '2026-05-18T08:31:17Z'
+    description: "Representation Virtual Office"
+  - name: somsolet-engineering-ui
+    url: https://github.com/Som-Energia/somsolet-engineering-ui
+    language: JavaScript
+    pushed_at: '2024-02-28T14:04:31Z'
+    description: ""
+  - name: somsolet-ui
+    url: https://github.com/Som-Energia/somsolet-ui
+    language: JavaScript
+    pushed_at: '2023-06-06T13:53:21Z'
+    description: "Som Solet Client UI"
+  - name: somsolet_backoffice_dashboard
+    url: https://github.com/Som-Energia/somsolet_backoffice_dashboard
+    language: null
+    pushed_at: '2023-10-30T14:28:56Z'
+    description: "Dashboards to manage somsolet "
+  - name: tomato-cooker
+    url: https://github.com/Som-Energia/tomato-cooker
+    language: Python
+    pushed_at: '2024-10-29T05:57:37Z'
+    description: ""
+  - name: trello-fuzzyestimations
+    url: https://github.com/Som-Energia/trello-fuzzyestimations
+    language: JavaScript
+    pushed_at: '2018-03-02T15:14:35Z'
+    description: "A static GitHub pages hosted sample Power-Up"
+  - name: uiqmako-api
+    url: https://github.com/Som-Energia/uiqmako-api
+    language: Python
+    pushed_at: '2024-10-17T03:47:42Z'
+    description: ""
+  - name: uiqmako-ui
+    url: https://github.com/Som-Energia/uiqmako-ui
+    language: JavaScript
+    pushed_at: '2025-02-18T08:39:44Z'
+    description: ""
+  - name: utopig-web-back
+    url: https://github.com/Som-Energia/utopig-web-back
+    language: null
+    pushed_at: '2026-04-13T08:06:31Z'
+    description: ""
+  - name: utopig-web-front
+    url: https://github.com/Som-Energia/utopig-web-front
+    language: null
+    pushed_at: '2026-05-22T10:51:49Z'
+    description: ""
+  - name: vatnumber
+    url: https://github.com/Som-Energia/vatnumber
+    language: Python
+    pushed_at: '2025-05-12T07:06:26Z'
+    description: "Automatically exported from code.google.com/p/vatnumber"
+  - name: visualpdfdiff
+    url: https://github.com/Som-Energia/visualpdfdiff
+    language: Python
+    pushed_at: '2023-09-11T17:58:38Z'
+    description: "Visual side by side comparision of rendered PDF documents (CLI tool, python function, unittest assert and back2back plugin)"
+  - name: webclient
+    url: https://github.com/Som-Energia/webclient
+    language: CSS
+    pushed_at: '2024-02-06T11:59:42Z'
+    description: "Frontend for GISCE ERP"
+  - name: webforms
+    url: https://github.com/Som-Energia/webforms
+    language: Python
+    pushed_at: '2026-05-26T10:32:22Z'
+    description: "Webforms"
+  - name: webforms-ui
+    url: https://github.com/Som-Energia/webforms-ui
+    language: JavaScript
+    pushed_at: '2026-05-26T11:32:25Z'
+    description: "Som Energia WebForms UI React reimplementation"
+  - name: ws_transactions
+    url: https://github.com/Som-Energia/ws_transactions
+    language: Python
+    pushed_at: '2026-05-25T11:47:32Z'
+    description: "WebServices Transactions for OpenObject"
