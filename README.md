@@ -36,8 +36,16 @@ sudo apt install -y git jq curl
   && sudo apt update \
   && sudo apt install -y gh
 
-# Instal·lar OpenCode CLI (si encara no el tens)
+# Instal·lar OpenCode TUI (terminal)
 curl -fsSL https://opencode.ai/install | bash
+
+# Instal·lar OpenCode Desktop (entorn gràfic)
+cd /tmp
+wget https://opencode.ai/download/stable/linux-x64-deb
+sudo dpkg -i linux-x64-deb
+
+# Instal·lar Ghostty
+sudo snap install ghostty --classic
 ```
 
 ## Ús ràpid
