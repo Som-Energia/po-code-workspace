@@ -19,15 +19,18 @@ Respondre preguntes com:
    - `summaries/indexes/by-language.md`
    - `summaries/repos/*.md`
 
-## Com usar-ho amb OpenCode
+## Com usar-ho amb OpenCode v2
 
-- Dona el context funcional de la feature.
+- Obre `opencode` des de l'arrel del workspace.
+- Executa `/grill-me <demanda funcional>` per seleccionar l'agent `po-griller` i iniciar l'anàlisi.
+- Alternativament, selecciona `po-griller` manualment i dona el context funcional de la feature.
+- L'agent és de només lectura: no modifica fitxers ni executa shell.
 - Demana impacte per repos:
   - mòduls potencials,
   - riscs,
   - estimació de cost,
   - preguntes obertes.
-- Pots partir de `opencode/commands/grill-me.md`.
+- El prompt és a `.opencode/commands/grill-me.md` i l'agent a `.opencode/agents/po-griller.md`; OpenCode els descobreix automàticament.
 
 ## Recomanació
 

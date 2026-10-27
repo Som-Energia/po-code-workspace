@@ -17,7 +17,7 @@ Workspace per Product Owners de Som Energia per explorar i analitzar funcionalit
 - `gh` (GitHub CLI)
 - `GITHUB_TOKEN` amb permisos de lectura als repos de `Som-Energia`
 - `jq`
-- `opencode` (CLI)
+- `opencode` v2 (CLI)
 
 ## Instal·lació de requisits (Ubuntu)
 
@@ -36,17 +36,22 @@ sudo apt install -y git jq curl
   && sudo apt update \
   && sudo apt install -y gh
 
-# Instal·lar OpenCode TUI (terminal)
-curl -fsSL https://opencode.ai/install | bash
+# Instal·lar OpenCode v2 TUI (terminal)
+curl -fsSL https://opencode.ai/v2/install | bash
+opencode --version
 
-# Instal·lar OpenCode Desktop (entorn gràfic)
-cd /tmp
-wget https://opencode.ai/download/stable/linux-x64-deb
-sudo dpkg -i linux-x64-deb
+# Instal·lar OpenCode v2 Desktop (entorn gràfic, Linux x64)
+(
+  cd /tmp
+  curl -fL https://opencode.ai/update/api/latest/desktop/opencode/opencode-desktop-linux-amd64.deb -o opencode-desktop.deb
+  sudo apt install ./opencode-desktop.deb
+)
 
 # Instal·lar Ghostty
 sudo snap install ghostty --classic
 ```
+
+Si ja tens OpenCode v1 instal·lat amb un gestor de paquets, desinstal·la'l amb el mateix gestor abans d'instal·lar v2. L'instal·lador curl de v2 substitueix el binari v1; tots dos fan servir la comanda `opencode`. Consulta la [guia oficial de migració](https://opencode.ai/v2/docs/migrate-v1/).
 
 ## Ús ràpid
 
@@ -71,18 +76,24 @@ export GITHUB_TOKEN=ghp_xxx
 
 S'ha definit l'agent a:
 
-- `opencode/agents/po-griller.md`
+- `.opencode/agents/po-griller.md`
+
+És un agent primari de només lectura amb permisos natius de v2: pot llegir i cercar codi, però no modificar fitxers, executar shell ni delegar a altres agents.
 
 Ús orientatiu:
 
 1. Obre OpenCode dins aquest workspace.
-2. Selecciona l'agent **PO-Griller**.
+2. Selecciona l'agent `po-griller` (l'identificador ve del nom del fitxer).
 3. Fes-li una demanda funcional (ex: "volem afegir X al procés Y").
 4. L'agent farà preguntes de "grilling" i acabarà amb un veredicte:
    - `[JA ESTÀ FET]`
    - `[FÀCIL]`
    - `[COMPLICAT]`
    - `[IMPOSSIBLE / NO RECOMANAT]`
+
+També pots executar `/grill-me volem afegir X al procés Y`: la comanda selecciona `po-griller` i analitza la demanda. Sense arguments, et demanarà el context funcional.
+
+Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-les a la configuració global.
 
 ## Flux recomanat per PO
 
@@ -97,4 +108,4 @@ S'ha definit l'agent a:
 - Si un repo passa a archived, deixarà d’entrar a la llista activa a la següent descoberta.
 - Els scripts fan servir `GITHUB_TOKEN` per consultar GitHub i per clone/pull.
 - Flux 100% bash + `jq` (sense dependència de Python).
-- `opencode/commands/grill-me.md` inclou prompt base per estimar impacte/cost de features.
+- `.opencode/commands/grill-me.md` defineix `/grill-me` per estimar impacte/cost de features.
