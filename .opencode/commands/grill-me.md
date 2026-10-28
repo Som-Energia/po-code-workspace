@@ -1,10 +1,15 @@
-# grill-me
+---
+description: Analitza la viabilitat i el cost d'una funcionalitat entre repositoris.
+agent: po-griller
+---
 
-Use this command to analyze feature cost across Som-Energia repos.
+Analyze feature cost across Som-Energia repos for this functional request:
 
-## Prompt template
+$ARGUMENTS
 
-Given a functional request:
+If no request was provided, ask the Product Owner for it before analyzing.
+
+Given the functional request:
 
 1. Identify impacted repositories from `summaries/indexes/active-repos.md` and `summaries/repos/*.md`.
 2. For each impacted repo, explain:

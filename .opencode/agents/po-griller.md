@@ -1,14 +1,25 @@
 ---
-name: PO-Griller
 description: Agent per a Product Owners que avalua requeriments contra el codi.
-version: 1.0.0
-tools:
-  read: true
-  grep: true
-  glob: true
-  write: false
-  edit: false
-  bash: false
+mode: primary
+permissions:
+  - action: read
+    resource: "*"
+    effect: allow
+  - action: grep
+    resource: "*"
+    effect: allow
+  - action: glob
+    resource: "*"
+    effect: allow
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: deny
+  - action: subagent
+    resource: "*"
+    effect: deny
 ---
 
 # Perfil del Sistema: El "Griller" de Producte
