@@ -21,7 +21,8 @@ Respondre preguntes com:
 
 ## Com usar-ho amb OpenCode v2
 
-- Obre `opencode` des de l'arrel del workspace.
+- Executa `./scripts/opencode.sh` des de l'arrel del workspace; OpenCode s'obrirà dins de `repos/`.
+- El model predeterminat per a sessions noves és `openai/gpt-6-luna`. També es permeten `openai/gpt-6.1-sol` i `openai/gpt-6.1-terra`; els altres es filtren del catàleg del workspace.
 - Executa `/grill-me <demanda funcional>` per seleccionar l'agent `po-griller` i iniciar l'anàlisi.
 - Alternativament, selecciona `po-griller` manualment i dona el context funcional de la feature.
 - L'agent és de només lectura: no modifica fitxers ni executa shell.

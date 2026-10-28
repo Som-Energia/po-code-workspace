@@ -70,7 +70,26 @@ export GITHUB_TOKEN=ghp_xxx
 
 # 4) Validar salut del workspace
 ./scripts/check-health.sh
+
+# 5) Obrir OpenCode dins repos/
+./scripts/opencode.sh
 ```
+
+## Models i directori inicial d'OpenCode
+
+Executa `./scripts/opencode.sh` (o `/opt/po-code-workspace/scripts/opencode.sh` des de qualsevol directori). El llançador crea `repos/` si cal i hi inicia OpenCode. No clona repositoris: per omplir-lo, executa abans els passos de descoberta i sincronització.
+
+OpenCode v2 carrega la configuració `opencode.json` i les definicions `.opencode/` del directori pare. Executar simplement `opencode` no canvia automàticament el directori: per començar sempre a `repos/`, fes servir el llançador.
+
+Models permesos:
+
+- `openai/gpt-6.1-sol`
+- `openai/gpt-6.1-terra`
+- `openai/gpt-6-luna` (**predeterminat per a sessions noves**)
+
+El plugin local `plugins/model-allowlist/` aplica una llista tancada sobre el catàleg v2, incloent els models descoberts posteriorment i els d'altres proveïdors. La llista és a `plugins[].options.allowedModels` d'`opencode.json`; el valor `model` ha de pertànyer a aquesta llista. El plugin no inventa ni activa models: cal tenir OpenAI connectat i els models disponibles al compte. Una sessió existent conserva el model seleccionat si continua permès.
+
+És una restricció d'aquest workspace, no una política de seguretat administrada: un usuari que modifiqui la configuració o desactivi el plugin pot canviar-la. Consulta les APIs de [models dels plugins v2](https://opencode.ai/v2/docs/build/plugins/server/#models).
 
 ## Agent d'OpenCode: PO-Griller
 
@@ -82,7 +101,7 @@ S'ha definit l'agent a:
 
 Ús orientatiu:
 
-1. Obre OpenCode dins aquest workspace.
+1. Obre OpenCode amb `./scripts/opencode.sh`.
 2. Selecciona l'agent `po-griller` (l'identificador ve del nom del fitxer).
 3. Fes-li una demanda funcional (ex: "volem afegir X al procés Y").
 4. L'agent farà preguntes de "grilling" i acabarà amb un veredicte:
@@ -107,5 +126,6 @@ Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-
 - Aquest repo no elimina cap carpeta local automàticament.
 - Si un repo passa a archived, deixarà d’entrar a la llista activa a la següent descoberta.
 - Els scripts fan servir `GITHUB_TOKEN` per consultar GitHub i per clone/pull.
-- Flux 100% bash + `jq` (sense dependència de Python).
+- Descoberta, sincronització i resums en bash + `jq` (sense dependència de Python). El filtre de models és un plugin JavaScript d'OpenCode v2.
+- Tests locals del filtre i el llançador: `node --test tests/opencode.test.mjs` (Node.js 18 o superior; només necessari per executar aquests tests).
 - `.opencode/commands/grill-me.md` defineix `/grill-me` per estimar impacte/cost de features.
