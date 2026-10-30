@@ -11,7 +11,7 @@ If no request was provided, ask the Product Owner for it before analyzing.
 
 Given the functional request:
 
-1. Identify impacted repositories from `summaries/indexes/active-repos.md` and `summaries/repos/*.md`.
+1. Locate the workspace root (the parent of `repos/` when running inside it). Identify impacted repositories from `<workspace>/summaries/indexes/active-repos.md` and `<workspace>/summaries/repos/*.md`, then inspect their actual code under `<workspace>/repos/`. If summaries are missing, explain that they must be generated and investigate the available repositories directly.
 2. For each impacted repo, explain:
    - probable modules/files to touch,
    - uncertainty level,

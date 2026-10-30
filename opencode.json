@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openai/gpt-6-luna",
+  "plugins": [
+    {
+      "package": "./plugins/model-allowlist",
+      "options": {
+        "allowedModels": [
+          "openai/gpt-6.1-sol",
+          "openai/gpt-6.1-terra",
+          "openai/gpt-6-luna"
+        ]
+      }
+    }
+  ]
+}
