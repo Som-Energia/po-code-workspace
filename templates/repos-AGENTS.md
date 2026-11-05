@@ -29,6 +29,7 @@ Aquest mapa no és exhaustiu ni garanteix que els repositoris estiguin presents.
 - Llegeix les instruccions `AGENTS.md` aplicables de cada repositori abans de treballar-hi. No les modifiquis com a part de la preparació del workspace.
 - Comença pels candidats més rellevants; evita llegir tots els clons indiscriminadament. Segueix les dependències quan hi hagi evidències d'integració.
 - Cita sempre el repositori i la ruta del fitxer. Separa evidències, hipòtesis, desconeguts i estimacions.
+- Per a consultes SQL o recomptes sobre dades de l'ERP, carrega `erp-sql-evidence` (`../.opencode/skills/erp-sql-evidence/SKILL.md`). Verifica primer models, taules, camps i relacions; no donis SQL executable amb identificadors suposats. Si la skill no es pot carregar, llegeix-ne el fitxer; si tampoc és accessible, limita't a l'anàlisi conceptual i explicita què falta verificar. No executis consultes per defecte.
 - L'objectiu habitual és l'anàlisi per al PO. No modifiquis codi, executis operacions de producció ni intentis esquivar permisos de només lectura sense una petició explícita i autoritzada.
 
 ## Privacitat i publicació

@@ -33,9 +33,11 @@ Utilitza aquest esquema si el repositori destí no té una plantilla adequada. S
 - [ ] <Comportament observable i verificable amb dades sintètiques.>
 - [ ] <Cas límit o regressió rellevant.>
 
-## Persona de contacte
+## Persona sol·licitant i contacte
 
-<Nom o àlies mínim autoritzat explícitament per publicar en aquest destí, o equip de contacte. Omet tota aquesta secció si no hi ha autorització. No incloguis correu ni telèfon; una menció @usuari requereix autorització per notificar-lo i no implica assignar-li la issue.>
+<Nom o àlies mínim de qui fa la petició i que és també el contacte de seguiment, autoritzat explícitament per publicar en aquest destí; no el compte tècnic del token. Una sola persona i una sola referència.>
+
+<Conserva la referència autoritzada tant a l'esborrany com al cos enviat, encara que adaptis una plantilla del repositori. Omet la secció si l'usuari ha decidit no publicar aquesta referència; si l'autorització és ambigua, pregunta abans de tancar l'esborrany. No incloguis correu ni telèfon; una menció @usuari requereix autorització per notificar-lo i no implica assignar-li la issue.>
 
 ## Hipòtesis i preguntes obertes
 
@@ -48,6 +50,6 @@ Utilitza aquest esquema si el repositori destí no té una plantilla adequada. S
 - [ ] Repositori canònic i visibilitat comprovats; issues habilitades i repositori no arxivat.
 - [ ] Plantilla del destí revisada i duplicats cercats amb termes sanejats, o limitacions indicades.
 - [ ] Sense dades personals dels casos, secrets, informació confidencial no autoritzada ni enllaços reveladors en cap camp.
-- [ ] S'ha preguntat pel contacte; només s'inclou una referència mínima amb autorització específica per al destí i, si escau, per mencionar-lo. Si no s'autoritza, s'omet.
+- [ ] S'ha preguntat el nom o àlies de la persona sol·licitant, que és també el contacte de seguiment; la referència única autoritzada consta al cos final. Les omissions són decisions explícites de privacitat, no pèrdues en resumir o adaptar la plantilla.
 - [ ] Exemples completament sintètics, no dades reals parcialment ocultades.
 - [ ] Títol, cos i metadades exactes mostrats a l'usuari; publicació pendent d'aprovació explícita.

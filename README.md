@@ -116,11 +116,17 @@ També pots executar `/grill-me volem afegir X al procés Y`: la comanda selecci
 
 Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-les a la configuració global.
 
+## Skill per preparar SQL de l'ERP amb evidències
+
+Demana «utilitza @erp-sql-evidence per preparar una consulta sobre…». La skill `.opencode/skills/erp-sql-evidence/SKILL.md` obliga a concretar la mètrica, el període i la zona horària, investigar els models ORM i justificar les taules, columnes i relacions abans de redactar SQL.
+
+Distingeix camps ORM de columnes emmagatzemades, codi d'esquema real, registres d'entitats úniques i possibles duplicats dels JOIN. Amb identificadors pendents, només ofereix pseudocodi no executable. Inclou un exemple completament sintètic; no descriu l'esquema real ni executa consultes per defecte. Una execució requereix petició explícita, entorn i consulta confirmats i un canal amb permisos reals de només lectura.
+
 ## Skill per crear issues sense exposar dades
 
 La skill `.opencode/skills/safe-github-issue/SKILL.md` es descobreix automàticament des del workspace i `repos/`. Pots demanar «utilitza @safe-github-issue per preparar una issue sobre…». Les instruccions desplegades a `repos/AGENTS.md` també en demanen l'ús per a issues, comentaris i edicions.
 
-El flux verifica repositori i visibilitat, busca duplicats amb termes sanejats, redacta amb dades sintètiques i pregunta pel nom o àlies de contacte per al seguiment. El contacte és voluntari: només es publica una referència mínima amb autorització específica per al destí; una menció també requereix permís per notificar-lo. Mostra el destí, títol, cos i metadades exactes abans de demanar aprovació explícita. Inclou una plantilla a `references/issue-template.md`. Els mateixos criteris de privacitat s'apliquen als repositoris privats; amb visibilitat desconeguda només es prepara l'esborrany, sense publicar.
+El flux verifica repositori i visibilitat, busca duplicats amb termes sanejats, redacta amb dades sintètiques i pregunta pel nom o àlies de contacte per al seguiment. La persona sol·licitant és també el contacte: un únic nom o àlies, diferent del compte tècnic que pugui publicar la issue. Només es publica la referència mínima amb autorització específica per al destí; una menció també requereix permís per notificar-lo. Si s'autoritza, ha de constar al cos aprovat i enviat, i es comprova després de crear la issue. Si es decideix no publicar-la, s'omet explícitament. Mostra el destí, títol, cos i metadades exactes abans de demanar aprovació explícita. Inclou una plantilla a `references/issue-template.md`. Els mateixos criteris de privacitat s'apliquen als repositoris privats; amb visibilitat desconeguda només es prepara l'esborrany, sense publicar.
 
 La skill no concedeix permisos ni és un filtre automàtic de dades. `po-griller` continua sense shell: pot preparar el text, però la publicació amb `gh` necessita una sessió amb permisos d'execució i un token amb accés al destí i `Issues: Read and write`. No es publica cap issue durant la preparació o les comprovacions del workspace.
 

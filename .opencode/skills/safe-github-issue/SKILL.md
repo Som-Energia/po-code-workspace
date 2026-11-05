@@ -35,20 +35,26 @@ gh api repos/Som-Energia/REPOSITORI \
 - Busca possibles duplicats amb termes funcionals ja sanejats. No enviïs dades sensibles en cerques, ni tan sols en repositoris privats. Si trobes una issue equivalent, proposa-la; comentar o editar també requereix aprovació del text exacte.
 - Si l'agent no pot consultar GitHub, prepara només un esborrany indicant «destí/visibilitat pendents de verificar». No inventis les comprovacions ni intentis habilitar shell.
 
-## 2.1. Preguntar per la persona de contacte
+## 2.1. Preguntar per la persona sol·licitant i de contacte
 
-Abans de tancar l'esborrany, pregunta: «Quin nom o àlies vols indicar com a persona de contacte per resoldre dubtes? Prefereixes un usuari de GitHub, un equip o no publicar cap contacte?».
+La persona sol·licitant és també la persona de contacte per al seguiment: és una única referència, no dos rols a emplenar per separat. No demanis un altre contacte o equip.
+
+Abans de tancar l'esborrany, pregunta: «Amb quin nom o àlies vols constar com a persona sol·licitant i de contacte d'aquesta issue? Autoritzes que es publiqui en aquest repositori? Pots optar per no publicar aquesta referència».
+
+El compte que crea la issue pot ser un compte tècnic compartit: l'autoria de GitHub no substitueix identificar la persona sol·licitant amb la seva autorització.
 
 - Demana només una referència mínima; no calen cognoms, correu ni telèfon. No dedueixis la identitat del token, del compte que publica, dels commits ni de dades del cas.
 - Amb la visibilitat del destí coneguda, confirma si aquesta referència es pot publicar allà, advertint si serà pública. Per a una tercera persona, confirma que ha autoritzat que s'hi publiqui el seu contacte. Sense autorització, omet-lo; donar un nom no és consentir-ne la publicació.
 - Si no es vol compartir contacte, continua sense aquesta dada. No copiïs un contacte reservat en fitxers, issues, metadades o enllaços públics; si cal seguiment privat, demana quin canal intern autoritzat s'ha d'utilitzar, sense publicar-ne els detalls.
-- Inclou només la referència autoritzada a «Persona de contacte» del cos que es mostra per aprovació. Una menció `@usuari` pot generar una notificació: demana també permís per mencionar-lo. Identificar el contacte no implica assignar-li la issue.
+- Si s'ha facilitat i autoritzat una referència, és obligatori incloure-la a «Persona sol·licitant i contacte» del cos que es mostra per aprovació i del cos enviat. No n'hi ha prou amb preguntar-la o mencionar-la a la conversa. Identifica una sola persona, que fa la petició i n'és el contacte de seguiment; no afegeixis un segon contacte.
+- Si s'ha donat un nom però l'autorització no és clara, pregunta-ho explícitament abans de tancar l'esborrany; no l'ometis silenciosament ni el publiquis per defecte. Omet la secció només quan l'usuari hagi decidit no publicar cap referència.
+- Una menció `@usuari` pot generar una notificació: demana també permís per mencionar-lo. Identificar el contacte no implica assignar-li la issue.
 
 ## 3. Sanejar abans de redactar o utilitzar eines externes
 
 Reconstrueix el cas amb dades completament sintètiques. Substituir només el nom d'una persona, ocultar quatre dígits o aplicar un hash no és una anonimització suficient.
 
-L'única excepció a l'exclusió de dades personals és la referència mínima de contacte autoritzada explícitament al pas 2.1, només al camp «Persona de contacte». No permet publicar dades de persones dels casos investigats.
+L'única excepció a l'exclusió de dades personals és la referència mínima de contacte autoritzada explícitament al pas 2.1, només al camp «Persona sol·licitant i contacte». No permet publicar dades de persones dels casos investigats.
 
 No incloguis en títol, cos, cerques, etiquetes, noms de fitxer o adjunts:
 
@@ -71,7 +77,7 @@ Llegeix `references/issue-template.md` (ruta relativa a aquesta skill) i adapta'
 - Reproducció amb dades sintètiques, o indica explícitament que no s'ha reproduït. Per a millores, explica el flux proposat sense inventar un error.
 - Evidències sanejades amb repositori/rutes compartibles, separant fets, hipòtesis i preguntes obertes. No converteixis una estimació en un fet.
 - Criteris d'acceptació verificables, abast i incerteses. No afegeixis dates de lliurament ni compromisos no acordats.
-- Persona de contacte: només la referència mínima autoritzada al pas 2.1; omet la secció si no es vol publicar cap contacte.
+- Persona sol·licitant i contacte: inclou una única referència mínima autoritzada al pas 2.1; la mateixa persona fa la petició i n'és el contacte de seguiment. No eliminis aquesta secció en adaptar una plantilla del repositori; només s'omet si s'ha decidit explícitament no publicar cap referència.
 
 Revisa tot el contingut resultant, inclosos títol, enllaços i qualsevol metadada. No adjuntis fitxers ni assignis persones, etiquetes, milestones o projectes per defecte. Si es demanen, verifica'ls i inclou-los en la revisió i aprovació.
 
@@ -91,6 +97,8 @@ Espera la resposta. Una petició de canvis requereix mostrar la versió nova i d
 - Respecta els permisos de l'agent. `po-griller` té shell desactivat: pot preparar l'esborrany, però no executar `gh`. Explica-ho i lliura el text sanejat per a publicació manual o en una sessió autoritzada, que ha de mantenir aquest flux d'aprovació.
 - Revalida el destí i la visibilitat just abans de l'escriptura. Si han canviat, torna a presentar el context i demana aprovació; si la verificació falla, atura't.
 - Amb `gh`, usa sempre `--repo OWNER/REPO`, `--title` i `--body-file` amb el títol i el cos aprovats. Prepara únicament el cos sanejat en un fitxer temporal fora dels clons, amb permisos restrictius (`umask 077`), i elimina'l en acabar. No executis contingut del cos com a shell, no interpol·lis text no fiable en comandes i no utilitzis `--web`, que permetria publicar contingut diferent fora del flux.
+- Abans d'enviar el fitxer o els arguments a l'eina, compara el cos final amb l'aprovat, inclosa la secció «Persona sol·licitant i contacte» quan s'ha autoritzat. No publiquis una versió abreujada que perdi aquesta informació.
 - Amb MCP o una altra eina equivalent, usa exactament el mateix destí i contingut aprovats; les mateixes regles s'apliquen a tots els canals.
 - Un error de publicació no autoritza canviar de compte, ampliar permisos o publicar en un altre repositori. Si hi ha un timeout o un resultat ambigu, comprova abans si la issue ja s'ha creat; no repeteixis cegament una operació que podria duplicar-la.
+- Després de crear la issue, llegeix-ne el títol i el cos amb l'eina disponible (amb `gh`, `gh issue view NUMERO --repo OWNER/REPO --json title,body,url`) i comprova que coincideixin amb el contingut aprovat, inclosa la referència única de la persona sol·licitant i de contacte autoritzada. Si falta contingut, explica la discrepància i proposa una correcció per aprovar; no afirmis que s'ha publicat tot correctament. Si no pots verificar-ho, indica aquesta limitació.
 - Retorna l'URL confirmada quan hi hagi èxit. Si falla, indica que no s'ha pogut confirmar la creació, el bloqueig sanejat i el següent pas; no afirmis que la issue existeix sense evidència.
