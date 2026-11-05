@@ -13,7 +13,7 @@ Respondre preguntes com:
 0. `export GITHUB_TOKEN=ghp_xxx`
 1. `./scripts/discover-repos.sh`
 2. `./scripts/sync-repos.sh`
-3. `./scripts/summarize-repos.sh`
+3. `./scripts/summarize-repos.sh` (genera els resums, els índexs i `repos/AGENTS.md` amb orientació i regles de privacitat).
 4. Revisar:
    - `summaries/indexes/active-repos.md`
    - `summaries/indexes/by-language.md`
@@ -32,6 +32,14 @@ Respondre preguntes com:
   - estimació de cost,
   - preguntes obertes.
 - El prompt és a `.opencode/commands/grill-me.md` i l'agent a `.opencode/agents/po-griller.md`; OpenCode els descobreix automàticament.
+
+## Passar de l'anàlisi a una issue
+
+Demana «utilitza @safe-github-issue per preparar una issue sobre aquesta proposta». No cal aportar dades personals ni exemples reals: descriu el flux i el resultat esperat.
+
+L'agent ha de confirmar el repositori, comprovar-ne la visibilitat i preparar un text amb dades sintètiques. Revisa el destí, el títol i el cos exactes abans d'aprovar-ne la publicació. Qualsevol canvi posterior requereix una nova aprovació; no es copien logs ni adjunts de producció.
+
+Amb `po-griller`, el resultat és un esborrany: l'agent no té permisos de shell per publicar amb `gh`. La skill no amplia aquests permisos. Pots publicar manualment el text revisat o continuar en una sessió autoritzada respectant la mateixa aprovació.
 
 ## Recomanació
 

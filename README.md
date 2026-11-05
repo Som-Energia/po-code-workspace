@@ -65,7 +65,7 @@ export GITHUB_TOKEN=ghp_xxx
 # 2) Clonar o fer pull dels repos
 ./scripts/sync-repos.sh
 
-# 3) Generar resums
+# 3) Generar resums, índexs i repos/AGENTS.md
 ./scripts/summarize-repos.sh
 
 # 4) Validar salut del workspace
@@ -74,6 +74,8 @@ export GITHUB_TOKEN=ghp_xxx
 # 5) Obrir OpenCode dins repos/
 ./scripts/opencode.sh
 ```
+
+`summarize-repos.sh` prepara també `repos/AGENTS.md` des de la plantilla versionada `templates/repos-AGENTS.md`, amb orientació entre repositoris i regles de privacitat. No sobreescriu personalitzacions locals ni els `AGENTS.md` dels clons. Executa aquest pas amb l'usuari de sincronització, abans d'obrir OpenCode amb accés de només lectura. Consulta el [manteniment de les instruccions](docs/maintenance.md#instruccions-dels-agents).
 
 ## Models i directori inicial d'OpenCode
 
@@ -114,6 +116,14 @@ També pots executar `/grill-me volem afegir X al procés Y`: la comanda selecci
 
 Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-les a la configuració global.
 
+## Skill per crear issues sense exposar dades
+
+La skill `.opencode/skills/safe-github-issue/SKILL.md` es descobreix automàticament des del workspace i `repos/`. Pots demanar «utilitza @safe-github-issue per preparar una issue sobre…». Les instruccions desplegades a `repos/AGENTS.md` també en demanen l'ús per a issues, comentaris i edicions.
+
+El flux verifica repositori i visibilitat, busca duplicats amb termes sanejats, redacta amb dades sintètiques i pregunta pel nom o àlies de contacte per al seguiment. El contacte és voluntari: només es publica una referència mínima amb autorització específica per al destí; una menció també requereix permís per notificar-lo. Mostra el destí, títol, cos i metadades exactes abans de demanar aprovació explícita. Inclou una plantilla a `references/issue-template.md`. Els mateixos criteris de privacitat s'apliquen als repositoris privats; amb visibilitat desconeguda només es prepara l'esborrany, sense publicar.
+
+La skill no concedeix permisos ni és un filtre automàtic de dades. `po-griller` continua sense shell: pot preparar el text, però la publicació amb `gh` necessita una sessió amb permisos d'execució i un token amb accés al destí i `Issues: Read and write`. No es publica cap issue durant la preparació o les comprovacions del workspace.
+
 ## Flux recomanat per PO
 
 1. Executar `discover-repos.sh`
@@ -127,5 +137,5 @@ Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-
 - Si un repo passa a archived, deixarà d’entrar a la llista activa a la següent descoberta.
 - Els scripts fan servir `GITHUB_TOKEN` per consultar GitHub i per clone/pull.
 - Descoberta, sincronització i resums en bash + `jq` (sense dependència de Python). El filtre de models és un plugin JavaScript d'OpenCode v2.
-- Tests locals del filtre i el llançador: `node --test tests/opencode.test.mjs` (Node.js 18 o superior; només necessari per executar aquests tests).
+- Tests locals del filtre, el llançador i la preparació d'instruccions: `node --test tests/*.test.mjs` (Node.js 18 o superior; només necessari per executar aquests tests).
 - `.opencode/commands/grill-me.md` defineix `/grill-me` per estimar impacte/cost de features.

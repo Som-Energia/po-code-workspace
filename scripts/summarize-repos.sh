@@ -1,11 +1,22 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT_DIR"
+
 REPOS_DIR="repos"
 OUT_DIR="summaries/repos"
 IDX_DIR="summaries/indexes"
+AGENTS_TEMPLATE="templates/repos-AGENTS.md"
+AGENTS_TARGET="$REPOS_DIR/AGENTS.md"
+AGENTS_PREVIOUS="summaries/.repos-AGENTS.last"
 
-mkdir -p "$OUT_DIR" "$IDX_DIR"
+if [[ ! -f "$AGENTS_TEMPLATE" ]]; then
+	echo "ERROR: falta la plantilla $AGENTS_TEMPLATE." >&2
+	exit 1
+fi
+
+mkdir -p "$REPOS_DIR" "$OUT_DIR" "$IDX_DIR"
 
 active_index="$IDX_DIR/active-repos.md"
 lang_index="$IDX_DIR/by-language.md"
@@ -73,5 +84,19 @@ for k in "${!by_lang[@]}"; do
 	echo "" >>"$lang_index"
 	printf "%b\n" "${by_lang[$k]}" >>"$lang_index"
 done
+
+# Keep the last deployed version so template updates never erase local edits.
+if [[ -L "$AGENTS_TARGET" || ( -e "$AGENTS_TARGET" && ! -f "$AGENTS_TARGET" ) ]]; then
+	echo "[WARN] $AGENTS_TARGET no és un fitxer regular; no es modifica." >&2
+elif [[ ! -e "$AGENTS_TARGET" ]] || cmp -s "$AGENTS_TARGET" "$AGENTS_TEMPLATE" ||
+	{ [[ -f "$AGENTS_PREVIOUS" ]] && cmp -s "$AGENTS_TARGET" "$AGENTS_PREVIOUS"; }; then
+	if ! cmp -s "$AGENTS_TEMPLATE" "$AGENTS_TARGET"; then
+		cp "$AGENTS_TEMPLATE" "$AGENTS_TARGET"
+	fi
+	cp "$AGENTS_TEMPLATE" "$AGENTS_PREVIOUS"
+	echo "[OK] $AGENTS_TARGET actualitzat des de $AGENTS_TEMPLATE"
+else
+	echo "[WARN] $AGENTS_TARGET té contingut local o d'origen desconegut; es conserva. Revisa les diferències amb $AGENTS_TEMPLATE." >&2
+fi
 
 echo "OK: resums i índexs generats."
