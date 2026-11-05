@@ -120,7 +120,7 @@ Les definicions es carreguen automàticament des de `.opencode/`; no cal copiar-
 
 La skill `.opencode/skills/safe-github-issue/SKILL.md` es descobreix automàticament des del workspace i `repos/`. Pots demanar «utilitza @safe-github-issue per preparar una issue sobre…». Les instruccions desplegades a `repos/AGENTS.md` també en demanen l'ús per a issues, comentaris i edicions.
 
-El flux verifica repositori i visibilitat, busca duplicats amb termes sanejats, redacta amb dades sintètiques i mostra el destí, títol, cos i metadades exactes abans de demanar aprovació explícita. Inclou una plantilla a `references/issue-template.md`. Els mateixos criteris de privacitat s'apliquen als repositoris privats; amb visibilitat desconeguda només es prepara l'esborrany, sense publicar.
+El flux verifica repositori i visibilitat, busca duplicats amb termes sanejats, redacta amb dades sintètiques i pregunta pel nom o àlies de contacte per al seguiment. El contacte és voluntari: només es publica una referència mínima amb autorització específica per al destí; una menció també requereix permís per notificar-lo. Mostra el destí, títol, cos i metadades exactes abans de demanar aprovació explícita. Inclou una plantilla a `references/issue-template.md`. Els mateixos criteris de privacitat s'apliquen als repositoris privats; amb visibilitat desconeguda només es prepara l'esborrany, sense publicar.
 
 La skill no concedeix permisos ni és un filtre automàtic de dades. `po-griller` continua sense shell: pot preparar el text, però la publicació amb `gh` necessita una sessió amb permisos d'execució i un token amb accés al destí i `Issues: Read and write`. No es publica cap issue durant la preparació o les comprovacions del workspace.
 

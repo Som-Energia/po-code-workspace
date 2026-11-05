@@ -33,6 +33,10 @@ Utilitza aquest esquema si el repositori destí no té una plantilla adequada. S
 - [ ] <Comportament observable i verificable amb dades sintètiques.>
 - [ ] <Cas límit o regressió rellevant.>
 
+## Persona de contacte
+
+<Nom o àlies mínim autoritzat explícitament per publicar en aquest destí, o equip de contacte. Omet tota aquesta secció si no hi ha autorització. No incloguis correu ni telèfon; una menció @usuari requereix autorització per notificar-lo i no implica assignar-li la issue.>
+
 ## Hipòtesis i preguntes obertes
 
 <Separa allò que s'ha comprovat d'allò que falta validar. No inventis evidències per omplir aquesta secció.>
@@ -43,6 +47,7 @@ Utilitza aquest esquema si el repositori destí no té una plantilla adequada. S
 
 - [ ] Repositori canònic i visibilitat comprovats; issues habilitades i repositori no arxivat.
 - [ ] Plantilla del destí revisada i duplicats cercats amb termes sanejats, o limitacions indicades.
-- [ ] Sense dades personals, secrets, informació confidencial no autoritzada ni enllaços reveladors en cap camp.
+- [ ] Sense dades personals dels casos, secrets, informació confidencial no autoritzada ni enllaços reveladors en cap camp.
+- [ ] S'ha preguntat pel contacte; només s'inclou una referència mínima amb autorització específica per al destí i, si escau, per mencionar-lo. Si no s'autoritza, s'omet.
 - [ ] Exemples completament sintètics, no dades reals parcialment ocultades.
 - [ ] Títol, cos i metadades exactes mostrats a l'usuari; publicació pendent d'aprovació explícita.
